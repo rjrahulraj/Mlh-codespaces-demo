@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevHub Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+
+<h1 class="logo">DevHub</h1>
+
+<button id="themeToggle" class="theme-btn">
+🌙
+</button>
+
+</header>
+
+
+<main class="container">
+
+<!-- Quotes -->
+
+<section class="card">
+<h2>Developer Quote</h2>
+
+<p id="quote">Loading quote...</p>
+<p id="author"></p>
+
+<div class="btn-group">
+<button id="newQuote">New Quote</button>
+<button id="copyQuote">Copy</button>
+</div>
+
+</section>
+
+
+<!-- Github -->
+
+<section class="card">
+
+<h2>GitHub Profile Finder</h2>
+
+<div class="search-box">
+
+<input id="searchUser" placeholder="Enter GitHub username">
+
+<button id="searchBtn">Search</button>
+
+</div>
+
+<div id="profile"></div>
+
+</section>
+
+
+
+<!-- Pomodoro -->
+
+<section class="card">
+
+<h2>Pomodoro Timer</h2>
+
+<h1 id="timer">25:00</h1>
+
+<div class="btn-group">
+
+<button id="start">Start</button>
+<button id="pause">Pause</button>
+<button id="reset">Reset</button>
+
+</div>
+
+</section>
+
+
+<!-- Todo -->
+
+<section class="card">
+
+<h2>Todo List</h2>
+
+<div class="todo-input">
+
+<input id="taskInput" placeholder="Add a task">
+
+<button id="addTask">Add</button>
+
+</div>
+
+<ul id="taskList"></ul>
+
+</section>
+
+
+<!-- Weather -->
+<section class="card">
+
+<h2>Weather</h2>
+
+<div class="weather-search">
+
+<input 
+id="cityInput"
+value="Delhi"
+placeholder="Enter city name"
+/>
+
+<button id="getWeather">
+Search
+</button>
+
+</div>
+
+<div id="weather">
+Loading weather...
+</div>
+
+</section>
+
+</main>
+
+
+<script src="js/quotes.js"></script>
+<script src="js/github.js"></script>
+<script src="js/pomodoro.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/weather.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
